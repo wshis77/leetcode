@@ -8,7 +8,7 @@
 class Solution:
 	# @param root, a tree node
 	# @return a list of lists of integers
-	def levelOrder(self, root):
+	def levelOrderBottom(self, root):
 		if root == None:
 			return []
 		parent = [root]
@@ -23,7 +23,7 @@ class Solution:
 					children.append(p.left)
 				if(p.right != None):
 					children.append(p.right)
-			result.append(temp)
+			result.insert(0,temp)
 			parent = children
 		return result
 
