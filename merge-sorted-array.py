@@ -22,5 +22,5 @@ class Solution:
 
 s = Solution()
 a = []
-s.merge(a,5,[33],4)
+s.merge(a,5,[1],4)
 print a
